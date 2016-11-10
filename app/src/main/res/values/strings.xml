@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">BW tasks</string>
+    <string name="app_name">BW Tasks</string>
+    <string name="title_activity_drawer">Navegação</string>
+
+    <string name="navigation_drawer_open">Abrir o menu de navegação</string>
+    <string name="navigation_drawer_close">Fechar o menu de navegação</string>
+
+    <string name="action_settings">Configurações</string>
 </resources>

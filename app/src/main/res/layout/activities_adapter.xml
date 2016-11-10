@@ -1,0 +1,56 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay"
+    android:layout_width="fill_parent" android:layout_height="91dp"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_menu"
+        android:id="@+id/imageButton2"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="20dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:layout_weight="0.76"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="30dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="370dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorLightPrimary"
+        android:layout_marginLeft="7dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="12:00"
+            android:id="@+id/tNomeAluno"
+            android:layout_gravity="center_vertical"
+            android:textStyle="normal|bold"
+            android:layout_weight="0.76"
+            android:textAllCaps="true"
+            android:textSize="36sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email@email.com"
+            android:id="@+id/tEmail"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+</FrameLayout>
