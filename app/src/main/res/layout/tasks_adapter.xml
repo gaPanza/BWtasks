@@ -1,0 +1,96 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay"
+    android:layout_width="fill_parent" android:layout_height="113dp"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:clickable="false"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        app:srcCompat="@drawable/ic_play"
+        android:id="@+id/imageView"
+        android:layout_marginTop="93dp"
+        android:layout_marginLeft="30dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_trash"
+        android:id="@+id/trashcan"
+        android:backgroundTint="@color/colorTextIcons"
+        android:background="@drawable/ic_trash"
+        android:layout_marginLeft="325dp"
+        android:layout_marginTop="36dp" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ativada"
+        android:layout_weight="0.76"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="35dp"
+        android:checked="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorLightPrimary"
+        android:weightSum="1"
+        android:id="@+id/background">
+
+        <TextView
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="12:00"
+            android:id="@+id/horario"
+            android:weightSum="1"
+            android:layout_gravity="center_vertical"
+            android:textStyle="normal|bold"
+
+            android:textAllCaps="true"
+            android:textSize="36sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:clickable="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email@email.com"
+            android:id="@+id/dias"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="3dp"
+            android:textSize="12sp"
+            android:clickable="false" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:ems="10"
+            android:id="@+id/marcadorEditText"
+            android:textSize="10sp"
+            android:inputType="text|textShortMessage"
+            android:hint="Marcador"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="visible"
+            android:layout_marginLeft="45dp"
+            android:elevation="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:clickable="false"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:layout_alignStart="@+id/quarta"
+        android:layout_below="@+id/quarta"
+        android:layout_marginStart="13dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/domingo"
+        android:layout_alignStart="@+id/domingo"
+        android:layout_marginStart="10dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="18dp"
+        android:id="@+id/domingo"
+        android:checked="true"
+        android:duplicateParentState="false"
+        android:layout_below="@+id/timePicker"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/domingo"
+        android:layout_toEndOf="@+id/domingo"
+        android:layout_marginStart="11dp"
+        android:id="@+id/segunda"
+        android:checked="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:id="@+id/terca"
+        android:checked="true"
+        android:layout_alignBaseline="@+id/segunda"
+        android:layout_alignBottom="@+id/segunda"
+        android:layout_toEndOf="@+id/segunda" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:id="@+id/quarta"
+        android:checked="true"
+        android:layout_alignBaseline="@+id/terca"
+        android:layout_alignBottom="@+id/terca"
+        android:layout_toEndOf="@+id/terca" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:id="@+id/quinta"
+        android:checked="true"
+        android:layout_alignBaseline="@+id/quarta"
+        android:layout_alignBottom="@+id/quarta"
+        android:layout_toEndOf="@+id/quarta" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:id="@+id/sexta"
+        android:checked="true"
+        android:layout_alignBaseline="@+id/quinta"
+        android:layout_alignBottom="@+id/quinta"
+        android:layout_toEndOf="@+id/quinta" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:id="@+id/sabado"
+        android:checked="true"
+        android:layout_alignBaseline="@+id/sexta"
+        android:layout_alignBottom="@+id/sexta"
+        android:layout_toEndOf="@+id/sexta" />
+
+    <TextView
+        android:text="S"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_marginStart="11dp"
+        android:layout_below="@+id/segunda"
+        android:layout_alignStart="@+id/segunda" />
+
+    <TextView
+        android:text="T"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_marginStart="11dp"
+        android:layout_below="@+id/terca"
+        android:layout_alignStart="@+id/terca" />
+
+    <TextView
+        android:text="Q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/quinta"
+        android:layout_toStartOf="@+id/sexta"
+        android:layout_marginEnd="10dp" />
+
+    <TextView
+        android:text="S"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:textAlignment="textStart"
+        android:layout_marginEnd="11dp"
+        android:layout_below="@+id/sabado"
+        android:layout_alignEnd="@+id/sabado" />
+
+    <TextView
+        android:text="S"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/sexta"
+        android:textAlignment="textStart"
+        android:layout_marginEnd="11dp"
+        android:layout_alignEnd="@+id/sexta"
+        />
+
+    <TimePicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timePicker"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:text="M"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/Marcador"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?android:attr/selectableItemBackground" />
+    <Button
+        android:text="Agendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Agendar"
+        android:background="@color/colorPrimary"
+        android:elevation="14dp"
+        android:fontFamily="casual"
+        android:textAllCaps="false"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView6" />
+
+    <Button
+        android:text="Voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Voltar"
+        android:background="@color/colorLightPrimary2"
+        android:elevation="14dp"
+        android:fontFamily="casual"
+        android:textAllCaps="false"
+        android:layout_alignBaseline="@+id/Agendar"
+        android:layout_alignBottom="@+id/Agendar"
+        android:layout_toEndOf="@+id/textView3" />
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:background="@drawable/layout_bg"
+
+        android:layout_height="150dp"
+        android:layout_marginTop="86dp"
+        android:id="@+id/marcador"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:text="Marcador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:id="@+id/textView8"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="22dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorDivider" />
+
+        <Button
+            android:text="Cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancelar"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@color/colorDivider" />
+
+        <Button
+            android:text="Ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ok"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorDivider" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editMarcador"
+            android:layout_marginRight="20dp"
+            android:hint="Edite o Marcador"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="textShortMessage"
+            android:textColor="@color/colorDivider"
+            android:textColorHint="@color/colorDivider"
+            android:layout_below="@+id/textView8"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp" />
+    </RelativeLayout>
+</RelativeLayout>
